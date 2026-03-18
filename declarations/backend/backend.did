@@ -1,0 +1,36 @@
+type http_request_result = 
+ record {
+   body: blob;
+   headers: vec http_header;
+   status: nat;
+ };
+type http_header = 
+ record {
+   name: text;
+   value: text;
+ };
+type TransformationOutput = 
+ record {
+   body: blob;
+   headers: vec http_header;
+   status: nat;
+ };
+type TransformationInput = 
+ record {
+   context: blob;
+   response: http_request_result;
+ };
+type ContactForm = 
+ record {
+   email: text;
+   message: text;
+   name: text;
+   phone: text;
+   timestamp: int;
+ };
+service : {
+  getAllContactForms: () -> (vec ContactForm) query;
+  submitContactForm: (name: text, email: text, phone: text, message: 
+   text) -> (bool);
+  transform: (input: TransformationInput) -> (TransformationOutput) query;
+}
