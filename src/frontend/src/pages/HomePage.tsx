@@ -597,7 +597,7 @@ export function HomePage() {
                       Pakket 1
                     </h4>
                     <p className="text-xl sm:text-2xl md:text-3xl font-bold text-primary leading-tight">
-                      1000 lesminuten en examen €1475,
+                      1000 lesminuten en examen €1475,-
                     </p>
                     <p className="text-sm sm:text-base md:text-base text-muted-foreground mt-2">
                       overige lessen in overleg
@@ -678,7 +678,7 @@ export function HomePage() {
                       Pakket 2
                     </h4>
                     <p className="text-xl sm:text-2xl md:text-3xl font-bold text-primary leading-tight">
-                      1000 lesminuten, toets en examen €1749,
+                      1000 lesminuten, toets en examen €1749,-
                     </p>
                     <p className="text-sm sm:text-base md:text-base text-muted-foreground mt-2">
                       overige lessen in overleg
